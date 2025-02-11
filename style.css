@@ -349,3 +349,101 @@ body {
   text-transform: uppercase;
 }
 /* end of the stats section */
+
+/* books section */
+.books-section {
+  margin-top: 10rem;
+}
+
+.books-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.book-card {
+  width: 30rem;
+}
+
+.book-card-image-wrapper {
+  height: 25rem;
+}
+
+.book-card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.book-details {
+  background-color: var(--color-white-light);
+  padding: 2rem 0;
+  transition: all 0.5s;
+}
+
+.book-card:hover .book-details {
+  background-color: var(--color-primary);
+}
+
+.book-details-price,
+.book-details-title,
+.book-details-author {
+  text-align: center;
+}
+
+.book-details-price {
+  color: var(--color-secondary);
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.book-card:hover .book-details-price {
+  color: var(--color-white);
+}
+
+.book-details-title {
+  font-size: 2.5rem;
+  color: var(--color-black-dark);
+  text-transform: capitalize;
+  margin: 1rem 0;
+  transition: all 0.5s;
+}
+
+.book-card:hover .book-details-title {
+  color: var(--color-white);
+}
+
+.book-details-author {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  transition: all 0.5s;
+}
+
+.book-card:hover .book-details-author {
+  color: var(--color-white);
+}
+
+.book-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.book-action {
+  text-decoration: none;
+  color: var(--color-black-dark);
+  font-size: 2rem;
+  --book-action-size: 4rem;
+  width: var(--book-action-size);
+  height: var(--book-action-size);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+}
+/* end of books section */
