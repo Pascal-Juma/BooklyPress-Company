@@ -1,0 +1,27 @@
+:root {
+  --color-primary: #95adbe;
+  --color-secondary: #ff7a5c;
+  --color-black: #000000;
+  --color-black-dark: #1a1a1a;
+  --color-black-light: #999999;
+  --color-white: #ffffff;
+  --color-white-light: #f5f4f0;
+  --primary-font: "Lora", serif;
+  --secondary-font: "Roboto", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--color-black-light);
+  font-family: var(--primary-font);
+}
