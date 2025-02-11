@@ -31,6 +31,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 4rem 6rem;
+  border-bottom: 1px solid var(--color-white-light);
 }
 
 @media screen and (max-width: 56.25em) {
@@ -111,5 +112,32 @@ body {
   background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
   color: var(--color-white);
+}
+
+.header-bottom {
+  padding: 2rem 2rem;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  list-style: none;
+}
+
+@media screen and (max-width: 37.5em) {
+  .header-nav-list {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+}
+
+.header-nav-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-black-dark);
+  font-size: small;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 /* end of header stylings */
