@@ -293,3 +293,27 @@ body {
   line-height: 2;
 }
 /* end of book category stylings */
+
+/* stats section */
+.stats-container {
+  background-color: var(--color-white-light);
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-count {
+  font-size: 4rem;
+  color: var(--color-black-dark);
+}
+
+.stat-description {
+  text-transform: uppercase;
+}
+/* end of the stats section */
