@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="./assets/images/book-favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Publishing Company</title>
     <link rel="stylesheet" href="style.css" />
@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- start of header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-top">
         <div class="header-social-icons">
           <a
@@ -78,19 +78,22 @@
       <div class="header-bottom">
         <nav class="header-nav">
           <ol class="header-nav-list">
-            <li class="header-nav-item"><a href="#">home</a></li>
+            <li class="header-nav-item"><a href="#home">home</a></li>
             <li class="header-nav-item"><a href="#">about</a></li>
-            <li class="header-nav-item"><a href="#">new releases</a></li>
-            <li class="header-nav-item"><a href="#">testimonies</a></li>
-            <li class="header-nav-item"><a href="#">blog</a></li>
+            <li class="header-nav-item"><a href="#new-releases">new releases</a></li>
+            <li class="header-nav-item"><a href="#testimonies">testimonies</a></li>
+            <li class="header-nav-item"><a href="#blogs">blog</a></li>
           </ol>
         </nav>
       </div>
     </header>
     <!-- End of header -->
 
+    <a href="#header" class="scroll-to-top">
+      <i class="fa-solid fa-up-long"></i>
+    </a>
     <!-- start of hero section -->
-    <section class="hero-section">
+    <section class="hero-section" id="home">
       <div class="hero-textbox">
         <h2 class="hero-tagline-main">
           Good books don't give up all their secrets at once
@@ -184,7 +187,7 @@
     <!-- end of stats -->
 
     <!-- books section -->
-    <section class="books-section">
+    <section class="books-section" id="new-releases">
       <div class="title">
         <p class="title--sub">books</p>
         <h2 class="title--main">new releases</h2>
@@ -354,7 +357,7 @@
     <!-- end of books section -->
 
     <!-- testimonies section -->
-    <section class="testimonies-section">
+    <section class="testimonies-section" id="testimonies">
       <div class="title">
         <p class="title--sub u-text-white">testimonies</p>
         <h2 class="title--main u-text-white">our customers love us</h2>
@@ -418,7 +421,7 @@
     <!-- end of testimonies section -->
 
     <!-- blogs section -->
-    <section class="blogs-section">
+    <section class="blogs-section" id="blogs">
       <div class="title">
         <p class="title--sub">blog</p>
         <h2 class="title--main">our recent blogs</h2>

@@ -8,6 +8,12 @@
   --color-white-light: #f5f4f0;
   --primary-font: "Lora", serif;
   --secondary-font: "Roboto", serif;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 * {
@@ -55,6 +61,23 @@ body {
   .title--main {
     font-size: 3.5rem;
   }
+}
+
+.scroll-to-top {
+  --scroll-to-top-size: 5rem;
+  width: var(--scroll-to-top-size);
+  height: var(--scroll-to-top-size);
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  text-decoration: none;
 }
 /* end of components */
 
