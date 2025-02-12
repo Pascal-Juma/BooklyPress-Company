@@ -58,6 +58,12 @@ body {
 }
 /* end of components */
 
+/* utility classes */
+.u-text-white {
+  color: var(--color-white);
+}
+/* end of utility classes */
+
 /* header stylings */
 .header-top {
   display: flex;
@@ -447,3 +453,76 @@ body {
   background-color: var(--color-white);
 }
 /* end of books section */
+
+/* testimonies section */
+.testimonies-section {
+  min-height: 40vh;
+  margin: 10rem 0;
+  background:
+    linear-gradient(rgba(149, 173, 190, 0.7), rgba(149, 173, 190, 0.7)),
+    url(./assets/images/customers.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 10rem 5rem;
+}
+
+@media screen and (max-width: 31.25em) {
+  .testimonies-section {
+    padding: 10rem 2rem;
+  }
+}
+
+.testimonies-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.testimony-card {
+  width: 35rem;
+  background-color: var(--color-white);
+  font-family: var(--secondary-font);
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 4px 1px 24px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 1px 24px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 1px 24px -1px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 31.25em) {
+  .testimony-card {
+    width: 98%;
+  }
+}
+
+.testimony-text {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.testimony-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.testimony-author-avatar {
+  --testimony-author-avatar-size: 8rem;
+  width: var(--testimony-author-avatar-size);
+  height: var(--testimony-author-avatar-size);
+  clip-path: circle(50% at 50% 50%);
+}
+
+.testimony-author-name {
+  text-transform: capitalize;
+  font-size: x-large;
+  color: var(--color-black-dark);
+}
+
+.testimony-author-position {
+  text-transform: capitalize;
+}
+/* end of the testimonies section */
