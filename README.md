@@ -1,5 +1,9 @@
 # Publishing Company
 
+<p align="center">
+    <img src="./assets/images/screenshot.png" alt="screenshot">
+</p>
+
 A landing page for a fictional publishing company.
 
 ## Getting Started
