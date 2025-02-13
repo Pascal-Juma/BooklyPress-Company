@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/images/book-favicon.png">
+    <link rel="icon" href="./assets/images/book-favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Publishing Company</title>
+    <title>Bookly Press Company</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,29 +29,44 @@
             href="https://github.com/codeme254"
             class="header-social-icon"
             target="_blank"
+            rel="noopener noreferrer"
+            title="Facebook"
           >
-            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            <span class="sr-only">Facebook</span>
           </a>
+
           <a
             href="https://github.com/codeme254"
             class="header-social-icon"
             target="_blank"
+            rel="noopener noreferrer"
+            title="Twitter"
           >
-            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+            <span class="sr-only">Twitter</span>
           </a>
+
           <a
             href="https://github.com/codeme254"
             class="header-social-icon"
             target="_blank"
+            rel="noopener noreferrer"
+            title="Instagram"
           >
-            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span class="sr-only">Instagram</span>
           </a>
+
           <a
             href="https://github.com/codeme254"
             class="header-social-icon"
             target="_blank"
+            rel="noopener noreferrer"
+            title="Dribbble"
           >
-            <i class="fa-brands fa-dribbble"></i>
+            <i class="fa-brands fa-dribbble" aria-hidden="true"></i>
+            <span class="sr-only">Dribbble</span>
           </a>
         </div>
 
@@ -59,9 +74,10 @@
           href="https://linkedin.com/in/otwoma"
           class="header-logo-link"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          <p class="logo-text--main">publishing <span>company</span></p>
-          <p class="logo-text--sub">book publishing company</p>
+          <p class="logo-text--main">Publishing <span>company</span></p>
+          <p class="logo-text--sub">book Publishing company</p>
         </a>
 
         <form class="header-search">
@@ -70,7 +86,11 @@
             placeholder="search"
             class="header-search-input"
           />
-          <button class="header-search-button">
+          <button
+            class="header-search-button"
+            type="button"
+            aria-label="Search"
+          >
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
@@ -79,9 +99,13 @@
         <nav class="header-nav">
           <ol class="header-nav-list">
             <li class="header-nav-item"><a href="#home">home</a></li>
-            <li class="header-nav-item"><a href="#">about</a></li>
-            <li class="header-nav-item"><a href="#new-releases">new releases</a></li>
-            <li class="header-nav-item"><a href="#testimonies">testimonies</a></li>
+            <li class="header-nav-item"><a href="#about">about</a></li>
+            <li class="header-nav-item">
+              <a href="#new-releases">new releases</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#testimonies">testimonies</a>
+            </li>
             <li class="header-nav-item"><a href="#blogs">blog</a></li>
           </ol>
         </nav>
@@ -89,9 +113,11 @@
     </header>
     <!-- End of header -->
 
-    <a href="#header" class="scroll-to-top">
+    <a href="#header" class="scroll-to-top" title="Scroll to Top">
       <i class="fa-solid fa-up-long"></i>
+      <span class="visually-hidden">Scroll to Top</span>
     </a>
+
     <!-- start of hero section -->
     <section class="hero-section" id="home">
       <div class="hero-textbox">
@@ -185,6 +211,54 @@
       </div>
     </div>
     <!-- end of stats -->
+
+    <!-- About Section-->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-images-container">
+          <img
+            class="about-image company"
+            src="./assets/images/company.jpg"
+            alt="company"
+          />
+          <img
+            class="about-image published"
+            src="./assets/images/about-books.jpg"
+            alt="published books"
+          />
+        </div>
+
+        <div class="about-text-container">
+          <div class="about-text">
+            <h5 class="about-text-title">About Us</h5>
+            <h1 class="about-welcome">
+              Welcome to Bookly Press Company, Where Stories Come to Life
+            </h1>
+
+            <p class="about-bookly-info">
+              Book Publishing Company is a creative powerhouse dedicated to
+              bringing stories to life. Established with a passion for
+              literature, we specialize in publishing compelling books across
+              various genres, from fiction and non-fiction to educational and
+              self-help titles. Through a commitment to quality, innovation, and
+              author support, we empower writers to share their voices with the
+              world.
+            </p>
+            <p class="about-bookly-infos">
+              Our focus areas include manuscript editing, professional book
+              design, digital and print publishing, and global distribution. We
+              believe in the power of storytelling to inspire, educate, and
+              entertain. By fostering partnerships with authors, literary
+              agents, and retailers, we ensure that every book reaches its
+              fullest potential. Whether you're a debut writer or a seasoned
+              author, Book Publishing Company is here to turn your vision into a
+              published reality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  End of About Section-->
 
     <!-- books section -->
     <section class="books-section" id="new-releases">
@@ -500,14 +574,19 @@
           </p>
 
           <div class="footer-social-links">
-            <a href="#" class="footer-social-link">
-              <i class="fa-brands fa-twitter"></i>
+            <a href="#" class="footer-social-link" title="Twitter">
+              <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+              <span class="sr-only">Twitter</span>
             </a>
-            <a href="#" class="footer-social-link">
-              <i class="fa-brands fa-facebook-f"></i>
+
+            <a href="#" class="footer-social-link" title="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              <span class="sr-only">Facebook</span>
             </a>
-            <a href="#" class="footer-social-link">
-              <i class="fa-brands fa-instagram"></i>
+
+            <a href="#" class="footer-social-link" title="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <span class="sr-only">Instagram</span>
             </a>
           </div>
         </div>
@@ -566,9 +645,9 @@
       </div>
       <p class="footer-copyright">
         &copy; 2025. Built with &hearts; by
-        <a href="https://linkedin.com/in/otwoma" target="_blank"
-          >Dennis Otwoma</a
-        >
+        <a href="https://linkedin.com/in/otwoma" target="_blank" rel="noopener">
+          Dennis Otwoma
+        </a>
       </p>
     </footer>
     <!-- end of the footer -->
